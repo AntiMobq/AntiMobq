@@ -1,10 +1,10 @@
 ## Hi there 🥴
 
-[![wakatime](https://wakatime.com/badge/user/051a01ef-bd90-4dbe-b871-40015887e752.svg?style=for-the-badge)](https://wakatime.com/@b2ffce60-8269-440f-81a0-7316f36a6085)
+[![wakatime]([https://wakatime.com/badge/user/051a01ef-bd90-4dbe-b871-40015887e752.svg?style=for-the-badge)](https://wakatime.com/@b2ffce60-8269-440f-81a0-7316f36a6085](https://camo.githubusercontent.com/a604b2ea86be52761eba36d713512c6a3063d8208da15ecb6962f3067926e84a/68747470733a2f2f77616b6174696d652e636f6d2f62616467652f757365722f62326666636536302d383236392d343430662d383161302d3733313666333661363038352e7376673f7374796c653d666f722d7468652d6261646765))
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AntiMobq&show_icons=true&theme=dracula)
+![Anurag's GitHub stats]([https://github-readme-stats.vercel.app/api?username=AntiMobq&show_icons=true&theme=dracula](https://camo.githubusercontent.com/8fb72b1ed5d7261889dfbd9da53561511ca331e29577a3d64ad69b75ae51765b/68747470733a2f2f6769746875622d726561646d652d73746174732d65696768742d74686574612e76657263656c2e6170702f6170693f757365726e616d653d656e6465726e656b6f267468656d653d6d6f6e6f6b61692673686f775f69636f6e733d7472756526686964655f626f726465723d74727565))
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AntiMobq&layout=compact&theme=dracula)](https://github.com/AntiMobq/github-readme-stats)
+[![Top Langs]([https://github-readme-stats.vercel.app/api/top-langs/?username=AntiMobq&layout=compact&theme=dracula)](https://github.com/AntiMobq/github-readme-stats](https://camo.githubusercontent.com/8d3a62f59c32675cea8474cfea00b3ca4a5ee233948001a7759e1c262aea41c2/68747470733a2f2f6769746875622d726561646d652d73746174732d65696768742d74686574612e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d656e6465726e656b6f266c61796f75743d636f6d70616374267468656d653d6d6f6e6f6b616926686964655f626f726465723d74727565))
 
 <!--
 **AntiMobq/AntiMobq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
