@@ -2,7 +2,7 @@
 
 [![wakatime](https://wakatime.com/badge/user/b2ffce60-8269-440f-81a0-7316f36a6085.svg?style=for-the-badge)](https://wakatime.com/@b2ffce60-8269-440f-81a0-7316f36a6085)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AntiMobq&show_icons=true&theme=dracula)
+![Anurag's GitHub stats](https://camo.githubusercontent.com/8fb72b1ed5d7261889dfbd9da53561511ca331e29577a3d64ad69b75ae51765b/68747470733a2f2f6769746875622d726561646d652d73746174732d65696768742d74686574612e76657263656c2e6170702f6170693f757365726e616d653d656e6465726e656b6f267468656d653d6d6f6e6f6b61692673686f775f69636f6e733d7472756526686964655f626f726465723d74727565)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AntiMobq&layout=compact&theme=dracula)](https://github.com/AntiMobq/github-readme-stats)
 
