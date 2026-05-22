@@ -1,4 +1,4 @@
-## Hi there 🥴
+## im dizzy 🥴
 
 [![wakatime](https://wakatime.com/badge/user/b2ffce60-8269-440f-81a0-7316f36a6085.svg?style=for-the-badge)](https://wakatime.com/@b2ffce60-8269-440f-81a0-7316f36a6085)
 
