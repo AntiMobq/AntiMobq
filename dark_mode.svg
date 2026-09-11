@@ -1,124 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
-<style xmlns="http://www.w3.org/2000/svg">
-@font-face {
-src: local('JetBrains Mono'), local('JetBrainsMono'), local('Consolas');
-font-family: 'JetBrains Mono';
-font-display: swap;
-}
-.key {fill: #F45C1C;}
-.value {fill: #f4f4f5;}
-.addColor {fill: #f4f4f5;}
-.delColor {fill: #F45C1C;}
-.cc {fill: #8e8e96;}
-.head {fill: #f4f4f5;}
-text, tspan {white-space: pre;}
-.ascii {font-size: 11px;}
-</style>
-<defs xmlns="http://www.w3.org/2000/svg">
-<clipPath id="card"><rect width="985" height="580" rx="12"/></clipPath>
-<pattern id="dots" width="56" height="56" patternUnits="userSpaceOnUse">
-<path d="M0 28h56M28 0v56" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="0.5"/>
-<circle cx="28" cy="28" r="1.15" fill="#F45C1C" fill-opacity="0.45"/>
-</pattern>
-<radialGradient id="glowTop" cx="50%" cy="50%" r="70%">
-<stop offset="0%" stop-color="#F45C1C" stop-opacity="0.16"/>
-<stop offset="68%" stop-color="#F45C1C" stop-opacity="0"/>
-</radialGradient>
-<radialGradient id="glowBot" cx="50%" cy="50%" r="70%">
-<stop offset="0%" stop-color="#F45C1C" stop-opacity="0.10"/>
-<stop offset="70%" stop-color="#F45C1C" stop-opacity="0"/>
-</radialGradient>
-<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0%" stop-color="#F45C1C" stop-opacity="0"/>
-<stop offset="45%" stop-color="#F45C1C" stop-opacity="0.025"/>
-<stop offset="50%" stop-color="#ffffff" stop-opacity="0.04"/>
-<stop offset="55%" stop-color="#F45C1C" stop-opacity="0.025"/>
-<stop offset="100%" stop-color="#F45C1C" stop-opacity="0"/>
-</linearGradient>
-<filter id="grain" x="0%" y="0%" width="100%" height="100%">
-<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/>
-</filter>
-<filter id="logoGlow" x="-40%" y="-40%" width="180%" height="180%">
-<feGaussianBlur stdDeviation="2.4" result="b"/>
-<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-</defs>
-<g xmlns="http://www.w3.org/2000/svg" clip-path="url(#card)">
-<ellipse cx="492" cy="-10" rx="420" ry="230" fill="url(#glowTop)">
-<animate attributeName="opacity" values="0.55;1;0.55" dur="7s" repeatCount="indefinite"/>
-</ellipse>
-<ellipse cx="860" cy="540" rx="260" ry="190" fill="url(#glowBot)">
-<animate attributeName="opacity" values="0.4;0.85;0.4" dur="9s" repeatCount="indefinite"/>
-</ellipse>
-<rect x="-80" y="-80" width="1145" height="840" fill="url(#dots)">
-<animateTransform attributeName="transform" type="translate" from="0 0" to="56 56" dur="72s" repeatCount="indefinite"/>
-</rect>
-<g opacity="0.45">
-<rect x="-80" y="-80" width="1145" height="840" fill="url(#dots)">
-<animateTransform attributeName="transform" type="translate" from="0 0" to="-56 -40" dur="96s" repeatCount="indefinite"/>
-</rect>
-</g>
-<rect width="985" height="140" fill="url(#scan)">
-<animate attributeName="y" values="-140;580" dur="10s" repeatCount="indefinite"/>
-</rect>
-<rect width="985" height="580" filter="url(#grain)" opacity="0.04"/>
-<g filter="url(#logoGlow)">
-<text x="24" y="158" class="key ascii" xml:space="preserve">
-<tspan x="24" y="158.0">                   .,,......,,,,,:::::.</tspan>
-<tspan x="24" y="169.0">                     .::;--=---;;:,,,,:;;;.</tspan>
-<tspan x="24" y="180.0">                 .;=++=;:,,,:,,,:;-==-::##,</tspan>
-<tspan x="24" y="191.0">   .,:::.       *@+,   .:-=; :+=-;:..,;-,        ,:;;:.</tspan>
-<tspan x="24" y="202.0">  .+@@@@@#;     .;:,=#@@@@@+ -@@@@@@%+:        =%@@@@%=</tspan>
-<tspan x="24" y="213.0">     :=%@@@+     ;#@@@@@@@@+ -@@@@@@@@@@+,    +@@@*;.</tspan>
-<tspan x="24" y="224.0">;;.    +@@@@#+.:%@@@@@@@@@@+ -@@@@@@@@@@@@+.=%@@@@-    ,-;</tspan>
-<tspan x="24" y="235.0">-@@#=;+@@@@@@++@@@@@@@@@@@@+ -@@@@@@@@@@@@@#-@@@@@@#=+%@@;</tspan>
-<tspan x="24" y="246.0"> ;%@@@@@@@@@+-@@@@@@@@@@@@@+ -@@@@@@@@@@@@@@#;@@@@@@@@@#:</tspan>
-<tspan x="24" y="257.0">   :=++=-+%@;@@@@@@@@@@@@@@+ -@@@@@@@@@@@@@@@+=%+;-+=;,</tspan>
-<tspan x="24" y="268.0">           .+@@@@@@@@@@@@@@+ -@@@@@@@@@@@@@@@@.</tspan>
-<tspan x="24" y="279.0">            #@@@@@@@@@@@@@@+ -@@@####%@@@@@@@@.</tspan>
-<tspan x="24" y="290.0">            *@@@@@@@@@@@@@@+ -@+.      .,;*@@@.</tspan>
-<tspan x="24" y="301.0">            -@@@@@@@@@@@@@@+ -@:           +@%</tspan>
-<tspan x="24" y="312.0">           ,;@@@@@@@%@@@@@@+ -@%.          *@*,,</tspan>
-<tspan x="24" y="323.0">    :-==-+%@;@@@@@+;=-=%@@@+ -@@%:        =@@-#@#--==-:</tspan>
-<tspan x="24" y="334.0">  =%@@@@@@@@+=@@@*.@@@#-+@@+ -@@@@*:    :*@@%;@@@@@@@@@%:</tspan>
-<tspan x="24" y="345.0"> +@@%++%@@@@@=*@@@:+@@@@+;#* -@%++#@@*#%@@@@-%@@@@@*-+%@@;</tspan>
-<tspan x="24" y="356.0"> *=:    #@@@@+ :+%%;-%@@@%-: :+-*#=-#@@@%*-.:#@@@@=    ,==</tspan>
-<tspan x="24" y="367.0">      ,;%@@@:     .=+;+@@@@*;-%@@@@*.@*:      +@@@#-,</tspan>
-<tspan x="24" y="378.0">    =%@@@@#:        :@*-+@@@@@@@@#+=%+         -%@@@@%-</tspan>
-<tspan x="24" y="389.0">    :;-;:.           ;@=,%@@@@@@#,=@#            .:;;:,</tspan>
-<tspan x="24" y="400.0">                      ;+@@@@@@@@@@*=</tspan>
-<tspan x="24" y="411.0">                     +@@@@@+,,+%@@@%.</tspan>
-<tspan x="24" y="422.0">                     ;*%#-.     ,;:</tspan>
-</text>
-</g>
-</g>
-<rect xmlns="http://www.w3.org/2000/svg" x="0.5" y="0.5" width="984" height="579" fill="none" stroke="#ffffff" stroke-opacity="0.08" rx="12"/>
-<path xmlns="http://www.w3.org/2000/svg" d="M8 42 V8 H42" fill="none" stroke="#F45C1C" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="miter"/>
-<path xmlns="http://www.w3.org/2000/svg" d="M943 8 H977 V42" fill="none" stroke="#F45C1C" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="miter"/>
-<path xmlns="http://www.w3.org/2000/svg" d="M8 538 V572 H42" fill="none" stroke="#F45C1C" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="miter"/>
-<path xmlns="http://www.w3.org/2000/svg" d="M943 572 H977 V538" fill="none" stroke="#F45C1C" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="miter"/>
-<line xmlns="http://www.w3.org/2000/svg" x1="397" y1="22" x2="397" y2="558" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
-<path xmlns="http://www.w3.org/2000/svg" d="M393 22 H401 M393 558 H401" fill="none" stroke="#F45C1C" stroke-width="1.2" stroke-linecap="square"/>
-<text xmlns="http://www.w3.org/2000/svg" x="424" y="32" fill="#f4f4f5">
-<tspan x="424" y="32" class="key">$ whoami</tspan><tspan class="cc"> → </tspan><tspan class="value">Cifer</tspan> ——————————————————————————————————————-—-
-<tspan x="424" y="62" class="cc">"Ideas find and claim us; we are merely</tspan>
-<tspan x="424" y="84" class="cc"> their vessels, not their architects."</tspan>
-<tspan x="424" y="114" class="key">⚠️ Heads up!</tspan><tspan class="value"> These are personal projects.</tspan>
-<tspan x="424" y="136" class="value">One person behind it all, not a company.</tspan>
-<tspan x="424" y="166" class="value">Something broken? Fork it. Fix it.</tspan>
-<tspan x="424" y="188" class="value">If you're here to whine, try Amazon.</tspan>
-<tspan x="424" y="210" class="key">Otherwise, enjoy the ride.</tspan>
-<tspan x="424" y="252"><tspan class="key">Builds</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">ESP32-DIV, nRFBox, RF-Clown, EvilDuck, TamaFi</tspan></tspan>
-<tspan x="424" y="274"><tspan class="key">Radios</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">Wi-Fi, BLE, Sub-GHz</tspan></tspan>
-<tspan x="424" y="296"><tspan class="key">Tools</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">Altium, VSCode, Arduino IDE</tspan></tspan>
-<tspan x="424" y="318"><tspan class="key">Languages</tspan>:<tspan class="cc"> ................................ </tspan><tspan class="value">C++, C, Python</tspan></tspan>
-<tspan x="424" y="360" class="key">- Contact</tspan> —————————————————————————————————————————————-—-
-<tspan x="424" y="382"><tspan class="key">Email</tspan>:<tspan class="cc"> ............................... </tspan><tspan class="value">CiferTech@gmail.com</tspan></tspan>
-<tspan x="424" y="404"><tspan class="key">Web</tspan>:<tspan class="cc"> ....................................... </tspan><tspan class="value">cifertech.net</tspan></tspan>
-<tspan x="424" y="426"><tspan class="key">YouTube</tspan>:<tspan class="cc"> ...................................... </tspan><tspan class="value">@techcifer</tspan></tspan>
-<tspan x="424" y="448"><tspan class="key">Instagram</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">@cifertech, @thecifer</tspan></tspan>
-<tspan x="424" y="470"><tspan class="key">Telegram</tspan>:<tspan class="cc"> ..................................... </tspan><tspan class="value">@cifertech</tspan></tspan>
-<tspan x="424" y="512" class="key">- GitHub Stats</tspan> ————————————————————————————————————————-—-
-<tspan x="424" y="534"><tspan class="key">Repos</tspan>:<tspan class="cc" id="repo_data_dots"> ...... </tspan><tspan class="value" id="repo_data">44</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value" id="contrib_data">44</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc" id="star_data_dots"> ....... </tspan><tspan class="value" id="star_data">10,255</tspan></tspan>
-<tspan x="424" y="556"><tspan class="key">Commits</tspan>:<tspan class="cc" id="commit_data_dots"> ..................... </tspan><tspan class="value" id="commit_data">574</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc" id="follower_data_dots"> .... </tspan><tspan class="value" id="follower_data">3,313</tspan></tspan>
-</text>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="985"
+    height="580"
+    viewBox="0 0 985 580"
+    role="img"
+    aria-label="Developer profile">
+
+    <!-- ========================================================= -->
+    <!-- CONFIG                                                     -->
+    <!-- ========================================================= -->
+
+    <style>
+        @font-face {
+            font-family: "JetBrains Mono";
+            src: local("JetBrains Mono"),
+                 local("JetBrainsMono"),
+                 local("Consolas"),
+                 local("monospace");
+        }
+
+        .terminal {
+            font-family: "JetBrains Mono", "Consolas", monospace;
+            font-size: 16px;
+        }
+
+        .ascii {
+            font-family: "JetBrains Mono", "Consolas", monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+
+        .orange {
+            fill: #F45C1C;
+        }
+
+        .white {
+            fill: #f4f4f5;
+        }
+
+        .gray {
+            fill: #8e8e96;
+        }
+
+        .muted {
+            fill: #606068;
+        }
+
+        .label {
+            fill: #F45C1C;
+        }
+
+        .value {
+            fill: #f4f4f5;
+        }
+
+        /* Logo breathing animation */
+        .logo {
+            animation: logoPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes logoPulse {
+            0%, 100% {
+                opacity: 0.72;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Floating particles */
+        .particle {
+            animation: particlePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes particlePulse {
+            0%, 100% {
+                opacity: 0.15;
+            }
+
+            50% {
+                opacity: 0.75;
+            }
+        }
+    </style>
+
+
+    <!-- ========================================================= -->
+    <!-- DEFINITIONS                                                 -->
+    <!-- ========================================================= -->
+
+    <defs>
+
+        <!-- Rounded card -->
+        <clipPath id="card">
+            <rect
+                x="0"
+                y="0"
+                width="985"
+                height="580"
+                rx="12"/>
+        </clipPath>
+
+
+        <!-- ===================================================== -->
+        <!-- BACKGROUND GRID                                       -->
+        <!-- ===================================================== -->
+
+        <pattern
+            id="grid"
+            width="56"
+            height="56"
+            patternUnits="userSpaceOnUse">
+
+            <path
+                d="M0 28H56
+                   M28 0V56"
+                fill="none"
+                stroke="#ffffff"
+                stroke-opacity="0.045"
+                stroke-width="0.6"/>
+
+            <circle
+                cx="28"
+                cy="28"
+                r="1.15"
+                fill="#F45C1C"
+                fill-opacity="0.42"/>
+        </pattern>
+
+
+        <!-- ===================================================== -->
+        <!-- TOP ORANGE GLOW                                       -->
+        <!-- ===================================================== -->
+
+        <radialGradient
+            id="topGlow"
+            cx="50%"
+            cy="50%"
+            r="70%">
+
+            <stop
+                offset="0%"
+                stop-color="#F45C1C"
+                stop-opacity="0.17"/>
+
+            <stop
+                offset="65%"
+                stop-color="#F45C1C"
+                stop-opacity="0"/>
+
+        </radialGradient>
+
+
+        <!-- ===================================================== -->
+        <!-- BOTTOM GLOW                                           -->
+        <!-- ===================================================== -->
+
+        <radialGradient
+            id="bottomGlow"
+            cx="50%"
+            cy="50%"
+            r="70%">
+
+            <stop
+                offset="0%"
+                stop-color="#F45C1C"
+                stop-opacity="0.10"/>
+
+            <stop
+                offset="70%"
+                stop-color="#F45C1C"
+                stop-opacity="0"/>
+
+        </radialGradient>
+
+
+        <!-- ===================================================== -->
+        <!-- SCANLINE                                              -->
+        <!-- ===================================================== -->
+
+        <linearGradient
+            id="scan"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="1">
+
+            <stop
+                offset="0%"
+                stop-color="#F45C1C"
+                stop-opacity="0"/>
+
+            <stop
+                offset="42%"
+                stop-color="#F45C1C"
+                stop-opacity="0.025"/>
+
+            <stop
+                offset="50%"
+                stop-color="#ffffff"
+                stop-opacity="0.055"/>
+
+            <stop
+                offset="58%"
+                stop-color="#F45C1C"
+                stop-opacity="0.025"/>
+
+            <stop
+                offset="100%"
+                stop-color="#F45C1C"
+                stop-opacity="0"/>
+
+        </linearGradient>
+
+
+        <!-- ===================================================== -->
+        <!-- LOGO GLOW                                             -->
+        <!-- ===================================================== -->
+
+        <filter
+            id="logoGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
+            <feGaussianBlur
+                stdDeviation="2.5"
+                result="blur"/>
+
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+
+        </filter>
+
+
+        <!-- ===================================================== -->
+        <!-- SOFT GLOW                                             -->
+        <!-- ===================================================== -->
+
+        <filter
+            id="softGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
+            <feGaussianBlur
+                stdDeviation="8"/>
+
+        </filter>
+
+
+        <!-- ===================================================== -->
+        <!-- GRAIN                                                 -->
+        <!-- ===================================================== -->
+
+        <filter
+            id="grain"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%">
+
+            <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.85"
+                numOctaves="4"
+                stitchTiles="stitch"/>
+
+        </filter>
+
+    </defs>
+
+
+    <!-- ========================================================= -->
+    <!-- MAIN CARD                                                  -->
+    <!-- ========================================================= -->
+
+    <g clip-path="url(#card)">
+
+
+        <!-- ===================================================== -->
+        <!-- BACKGROUND                                             -->
+        <!-- ===================================================== -->
+
+        <rect
+            width="985"
+            height="580"
+            fill="#0c1016"/>
+
+
+        <!-- ===================================================== -->
+        <!-- GRID                                                   -->
+        <!-- ===================================================== -->
+
+        <rect
+            x="-56"
+            y="-56"
+            width="1100"
+            height="700"
+            fill="url(#grid)">
+
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                from="0 0"
+                to="56 56"
+                dur="72s"
+                repeatCount="indefinite"/>
+
+        </rect>
+
+
+        <!-- Second subtle moving grid -->
+
+        <rect
+            x="-56"
+            y="-56"
+            width="1100"
+            height="700"
+            fill="url(#grid)"
+            opacity="0.35">
+
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                from="0 0"
+                to="-56 -40"
+                dur="96s"
+                repeatCount="indefinite"/>
+
+        </rect>
+
+
+        <!-- ===================================================== -->
+        <!-- AMBIENT GLOWS                                         -->
+        <!-- ===================================================== -->
+
+        <ellipse
+            cx="480"
+            cy="-30"
+            rx="430"
+            ry="230"
+            fill="url(#topGlow)">
+
+            <animate
+                attributeName="opacity"
+                values="0.45;1;0.45"
+                dur="7s"
+                repeatCount="indefinite"/>
+
+        </ellipse>
+
+
+        <ellipse
+            cx="860"
+            cy="540"
+            rx="270"
+            ry="190"
+            fill="url(#bottomGlow)">
+
+            <animate
+                attributeName="opacity"
+                values="0.35;0.85;0.35"
+                dur="9s"
+                repeatCount="indefinite"/>
+
+        </ellipse>
+
+
+        <!-- ===================================================== -->
+        <!-- RANDOM PARTICLES                                     -->
+        <!-- ===================================================== -->
+
+        <g fill="#F45C1C">
+
+            <circle class="particle" cx="45" cy="70" r="1"/>
+            <circle class="particle" cx="92" cy="122" r="0.8"/>
+            <circle class="particle" cx="150" cy="55" r="0.9"/>
+            <circle class="particle" cx="230" cy="92" r="0.7"/>
+            <circle class="particle" cx="315" cy="45" r="1"/>
+            <circle class="particle" cx="350" cy="110" r="0.8"/>
+            <circle class="particle" cx="430" cy="75" r="0.7"/>
+            <circle class="particle" cx="520" cy="95" r="0.8"/>
+            <circle class="particle" cx="610" cy="60" r="1"/>
+            <circle class="particle" cx="710" cy="115" r="0.8"/>
+            <circle class="particle" cx="820" cy="70" r="0.9"/>
+            <circle class="particle" cx="925" cy="130" r="0.8"/>
+
+            <circle class="particle" cx="60" cy="480" r="0.8"/>
+            <circle class="particle" cx="135" cy="520" r="1"/>
+            <circle class="particle" cx="245" cy="470" r="0.7"/>
+            <circle class="particle" cx="335" cy="530" r="0.8"/>
+            <circle class="particle" cx="550" cy="500" r="0.9"/>
+            <circle class="particle" cx="670" cy="540" r="0.8"/>
+            <circle class="particle" cx="790" cy="490" r="1"/>
+            <circle class="particle" cx="910" cy="520" r="0.8"/>
+
+        </g>
+
+
+        <!-- ===================================================== -->
+        <!-- SCANLINE                                              -->
+        <!-- ===================================================== -->
+
+        <rect
+            x="0"
+            y="-140"
+            width="985"
+            height="140"
+            fill="url(#scan)">
+
+            <animate
+                attributeName="y"
+                values="-140;580"
+                dur="10s"
+                repeatCount="indefinite"/>
+
+        </rect>
+
+
+        <!-- ===================================================== -->
+        <!-- SUBTLE GRAIN                                          -->
+        <!-- ===================================================== -->
+
+        <rect
+            x="0"
+            y="0"
+            width="985"
+            height="580"
+            filter="url(#grain)"
+            opacity="0.035"/>
+
+
+        <!-- ===================================================== -->
+        <!-- LEFT LOGO AREA                                        -->
+        <!-- ===================================================== -->
+
+        <g
+            class="logo"
+            filter="url(#logoGlow)">
+
+
+            <!-- Roblox Studio inspired ASCII logo -->
+
+            <text
+                x="34"
+                y="150"
+                class="ascii orange"
+                xml:space="preserve">
+
+<tspan x="34" y="150">              .::::::::::::.</tspan>
+<tspan x="34" y="160">          .:-=++++++++++++=-:.</tspan>
+<tspan x="34" y="170">       .:=+****************++=:.</tspan>
+<tspan x="34" y="180">     .-+************************+-.</tspan>
+<tspan x="34" y="190">    :+****************************+:</tspan>
+<tspan x="34" y="200">   -+**********+========+**********+-</tspan>
+<tspan x="34" y="210">  :+*********+=.        .-=+*********+:</tspan>
+<tspan x="34" y="220"> :+*********+:            :+*********+:</tspan>
+<tspan x="34" y="230"> +*********+:    .::::.    :+*********+</tspan>
+<tspan x="34" y="240">+*********+:   :+****+:    :+*********+</tspan>
+<tspan x="34" y="250">**********+:   +******+     :+**********</tspan>
+<tspan x="34" y="260">*********+:    +******+      :+*********</tspan>
+<tspan x="34" y="270">********+:     :+****+:       :+********</tspan>
+<tspan x="34" y="280">********+:      .::::.        :+********</tspan>
+<tspan x="34" y="290">********+:                    :+********</tspan>
+<tspan x="34" y="300">*********+:                  :+*********</tspan>
+<tspan x="34" y="310">**********+:                :+**********</tspan>
+<tspan x="34" y="320">+*********+:                :+*********+</tspan>
+<tspan x="34" y="330"> +*********+:              :+*********+</tspan>
+<tspan x="34" y="340"> :+*********+-            -+*********+:</tspan>
+<tspan x="34" y="350">  :+**********+-        -+**********+:</tspan>
+<tspan x="34" y="360">   -+***********+======+***********+-</tspan>
+<tspan x="34" y="370">    :+****************************+:</tspan>
+<tspan x="34" y="380">     .-+************************+-.</tspan>
+<tspan x="34" y="390">       .:=+****************++=:.</tspan>
+<tspan x="34" y="400">          .:-=++++++++++++=-:.</tspan>
+<tspan x="34" y="410">              .:::::::::.</tspan>
+
+            </text>
+
+        </g>
+
+
+        <!-- Small label under logo -->
+
+        <text
+            x="185"
+            y="445"
+            text-anchor="middle"
+            class="terminal orange"
+            font-size="13"
+            opacity="0.65">
+
+            ROBLOX STUDIO
+
+        </text>
+
+
+        <!-- ===================================================== -->
+        <!-- DIVIDER                                               -->
+        <!-- ===================================================== -->
+
+        <line
+            x1="397"
+            y1="22"
+            x2="397"
+            y2="558"
+            stroke="#ffffff"
+            stroke-opacity="0.12"
+            stroke-width="1"/>
+
+
+        <path
+            d="M393 22H401
+               M393 558H401"
+            fill="none"
+            stroke="#F45C1C"
+            stroke-width="1.2"/>
+
+
+        <!-- ===================================================== -->
+        <!-- RIGHT TERMINAL                                        -->
+        <!-- ===================================================== -->
+
+        <g class="terminal">
+
+
+            <!-- WHOAMI -->
+
+            <text x="424" y="32">
+
+                <tspan class="label">$ whoami</tspan>
+                <tspan class="gray"> → </tspan>
+                <tspan class="value">SEU_NOME</tspan>
+
+            </text>
+
+
+            <!-- Separator -->
+
+            <text
+                x="690"
+                y="32"
+                class="muted">
+
+                ─────────────────────
+
+            </text>
+
+
+            <!-- Quote -->
+
+            <text x="424" y="62">
+
+                <tspan class="gray">
+                    "Building ideas, one project at a time."
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="84">
+
+                <tspan class="gray">
+                    "Code. Create. Break. Fix. Repeat."
+                </tspan>
+
+            </text>
+
+
+            <!-- Warning -->
+
+            <text x="424" y="114">
+
+                <tspan class="label">⚠</tspan>
+                <tspan class="label"> Heads up!</tspan>
+                <tspan class="value"> Personal projects.</tspan>
+
+            </text>
+
+
+            <text x="424" y="136">
+
+                <tspan class="value">
+                    One developer behind it all.
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="166">
+
+                <tspan class="value">
+                    Something broken? Fix it.
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="188">
+
+                <tspan class="value">
+                    Something cool? Build it.
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="210">
+
+                <tspan class="label">
+                    Otherwise, enjoy the ride.
+                </tspan>
+
+            </text>
+
+
+            <!-- ================================================= -->
+            <!-- BUILDS                                             -->
+            <!-- ================================================= -->
+
+            <text x="424" y="252">
+
+                <tspan class="label">Builds</tspan>
+                <tspan class="gray"> ............ </tspan>
+                <tspan class="value">
+                    Roblox Games, Studio, Plugins
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="274">
+
+                <tspan class="label">Engine</tspan>
+                <tspan class="gray"> ............ </tspan>
+                <tspan class="value">
+                    Roblox Studio
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="296">
+
+                <tspan class="label">Tools</tspan>
+                <tspan class="gray"> ............. </tspan>
+                <tspan class="value">
+                    VSCode, Git, Studio
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="318">
+
+                <tspan class="label">Languages</tspan>
+                <tspan class="gray"> .......... </tspan>
+                <tspan class="value">
+                    Luau, Lua, Python
+                </tspan>
+
+            </text>
+
+
+            <!-- ================================================= -->
+            <!-- CONTACT                                            -->
+            <!-- ================================================= -->
+
+            <text x="424" y="360">
+
+                <tspan class="label">- Contact</tspan>
+                <tspan class="muted">
+                    ─────────────────────────────
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="382">
+
+                <tspan class="label">GitHub</tspan>
+                <tspan class="gray"> ................ </tspan>
+                <tspan class="value">
+                    @SEU_USUARIO
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="404">
+
+                <tspan class="label">Discord</tspan>
+                <tspan class="gray"> ............... </tspan>
+                <tspan class="value">
+                    seu_usuario
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="426">
+
+                <tspan class="label">YouTube</tspan>
+                <tspan class="gray"> ............... </tspan>
+                <tspan class="value">
+                    @seu_canal
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="448">
+
+                <tspan class="label">Roblox</tspan>
+                <tspan class="gray"> ................ </tspan>
+                <tspan class="value">
+                    @seu_usuario
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="470">
+
+                <tspan class="label">Web</tspan>
+                <tspan class="gray"> ................... </tspan>
+                <tspan class="value">
+                    seu-site.dev
+                </tspan>
+
+            </text>
+
+
+            <!-- ================================================= -->
+            <!-- STATS                                              -->
+            <!-- ================================================= -->
+
+            <text x="424" y="512">
+
+                <tspan class="label">- GitHub Stats</tspan>
+                <tspan class="muted">
+                    ───────────────────────
+                </tspan>
+
+            </text>
+
+
+            <text x="424" y="534">
+
+                <tspan class="label">Repos</tspan>
+                <tspan class="gray"> ........ </tspan>
+                <tspan class="value">00</tspan>
+
+                <tspan class="gray"> | </tspan>
+
+                <tspan class="label">Stars</tspan>
+                <tspan class="gray"> ....... </tspan>
+                <tspan class="value">00</tspan>
+
+            </text>
+
+
+            <text x="424" y="556">
+
+                <tspan class="label">Commits</tspan>
+                <tspan class="gray"> .............. </tspan>
+                <tspan class="value">00</tspan>
+
+                <tspan class="gray"> | </tspan>
+
+                <tspan class="label">Followers</tspan>
+                <tspan class="gray"> .... </tspan>
+                <tspan class="value">00</tspan>
+
+            </text>
+
+        </g>
+
+    </g>
+
+
+    <!-- ========================================================= -->
+    <!-- BORDER                                                     -->
+    <!-- ========================================================= -->
+
+    <rect
+        x="0.5"
+        y="0.5"
+        width="984"
+        height="579"
+        rx="12"
+        fill="none"
+        stroke="#ffffff"
+        stroke-opacity="0.09"/>
+
+
+    <!-- ========================================================= -->
+    <!-- CORNER DETAILS                                             -->
+    <!-- ========================================================= -->
+
+    <path
+        d="M8 42V8H42"
+        fill="none"
+        stroke="#F45C1C"
+        stroke-width="1.2"/>
+
+
+    <path
+        d="M943 8H977V42"
+        fill="none"
+        stroke="#F45C1C"
+        stroke-width="1.2"/>
+
+
+    <path
+        d="M8 538V572H42"
+        fill="none"
+        stroke="#F45C1C"
+        stroke-width="1.2"/>
+
+
+    <path
+        d="M943 572H977V538"
+        fill="none"
+        stroke="#F45C1C"
+        stroke-width="1.2"/>
+
+
+</svg>
